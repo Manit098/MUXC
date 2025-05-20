@@ -1,24 +1,16 @@
 @echo off
 echo Building MUX compiler...
 
-:: Clean up
-del *.o >nul 2>&1
-del muxc.exe >nul 2>&1
+setlocal
+set SRC=src
+set OUT=muxc.exe
 
-:: Compile C++ object files
-g++ -c src\main.cpp -o main.o
-g++ -c src\lexer.cpp -o lexer.o
-g++ -c src\parser.cpp -o parser.o
-g++ -c src\utils.cpp -o utils.o
+REM Compile without generating .o files
+g++ "%SRC%\main.cpp" "%SRC%\parser.cpp" "%SRC%\lexer.cpp" "%SRC%\utils.cpp" "%SRC%\codegen.c" -o %OUT%
 
-:: Compile C file
-gcc -c src\codegen.c -o codegen.o
-
-:: Link to output
-g++ main.o lexer.o parser.o utils.o codegen.o -o muxc.exe
-
-if exist muxc.exe (
-    echo MUX compiler built successfully.
+if %errorlevel% neq 0 (
+    echo  Build failed.
 ) else (
-    echo Build failed.
+    echo  MUX compiler built successfully: %OUT%
 )
+endlocal

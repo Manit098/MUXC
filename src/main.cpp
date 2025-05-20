@@ -3,7 +3,7 @@
 #include <string>
 #include "./headers/codegen.h"
 
-// From parser.cpp
+
 bool parse_and_generate(const std::string& filename);
 
 int main(int argc, char* argv[]) {
