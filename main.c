@@ -1,0 +1,85 @@
+#include <stdio.h>
+#include <stdbool.h>
+#include <string.h>
+#include <math.h>
+
+int main(void) {
+    int a = 10;
+    int b = 20;
+    int c = 30;
+    float x = 3.14;
+    float y = 2.718;
+    char ch = 'A';
+    bool flag = true;
+    printf("%s\n", "=== Basic Variables ===");
+    printf("%s %d %d %d\n", "Integers:", a, b, c);
+    printf("%s %f %f\n", "Floats:", x, y);
+    printf("%s %c\n", "Character:", ch);
+    printf("%s %d\n", "Boolean:", flag);
+    printf("%s\n", "\n=== Arithmetic Operators ===");
+    int sum = a + b;
+    int diff = b - a;
+    int prod = a * b;
+    int quot = b / a;
+    int mod = b % a;
+    printf("%s %d\n", "Addition (b + a):", sum);
+    printf("%s %d\n", "Subtraction (b - a):", diff);
+    printf("%s %d\n", "Multiplication (a * b):", prod);
+    printf("%s %d\n", "Division (b / a):", quot);
+    printf("%s %d\n", "Modulus (b % a):", mod);
+    printf("%s\n", "\n=== Float Arithmetic ===");
+    float fsum = x + y;
+    float fprod = x * y;
+    float fdiv = x / y;
+    printf("%s %f\n", "Float addition:", fsum);
+    printf("%s %f\n", "Float multiplication:", fprod);
+    printf("%s %f\n", "Float division:", fdiv);
+    printf("%s\n", "\n=== Comparison Operators ===");
+    bool test1 = a < b;
+    bool test2 = b > a;
+    bool test3 = a == 10;
+    bool test4 = b != 10;
+    bool test5 = a <= b;
+    bool test6 = b >= a;
+    printf("%s %d\n", "a < b:", test1);
+    printf("%s %d\n", "b > a:", test2);
+    printf("%s %d\n", "a == 10:", test3);
+    printf("%s %d\n", "b != 10:", test4);
+    printf("%s %d\n", "a <= b:", test5);
+    printf("%s %d\n", "b >= a:", test6);
+    printf("%s\n", "\n=== Logical Operators ===");
+    bool and_test = test1 && test2;
+    bool or_test = test1 || false;
+    bool not_test = !false;
+    printf("%s %d\n", "AND (test1 && test2):", and_test);
+    printf("%s %d\n", "OR (test1 || false):", or_test);
+    printf("%s %d\n", "NOT (!false):", not_test);
+    printf("%s\n", "\n=== Multiple Assignments ===");
+    int p, q, r;
+    p = 100;
+    q = 200;
+    r = 300;
+    printf("%s %d %d %d\n", "Multiple assigned values:", p, q, r);
+    printf("%s\n", "\n=== Complex Expressions ===");
+    int expr1 = (a + b) * c / (a + 5);
+    float expr2 = x * (y + 1.0) / (x - 1.0);
+    printf("%s %d\n", "Integer expression ((a + b) * c / (a + 5)):", expr1);
+    printf("%s %f\n", "Float expression (x * (y + 1.0) / (x - 1.0)):", expr2);
+    printf("%s\n", "\n=== Compound Assignments ===");
+    a = a + 5;
+    b = b - 3;
+    c = c * 2;
+    printf("%s %d\n", "a += 5:", a);
+    printf("%s %d\n", "b -= 3:", b);
+    printf("%s %d\n", "c *= 2:", c);
+    printf("%s\n", "\n=== String Tests ===");
+    printf("%s\n", "Hello"  " "  "World!");
+    printf("%s %d %s %d\n", "Value of a is:", a, "and b is:", b);
+    printf("%s\n", "\n=== Final Complex Test ===");
+    int final_result = (a + b * c) / (p - q + r) * 10;
+    printf("%s %d\n", "Final result:", final_result);
+    printf("%s\n", "Program completed successfully!");
+    char Name[] = "hello";
+    printf("%s %d\n", "Bankai Dayo 6969 ", Name);
+    return 0;
+}

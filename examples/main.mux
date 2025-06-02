@@ -1,0 +1,101 @@
+#mux
+
+def main() {
+    // Basic variable declarations with different types
+    int a = 10;
+    int b = 20;
+    int c = 30;
+    float x = 3.14;
+    float y = 2.718;
+    char ch = 'A';
+    bool flag = true;
+
+    // Basic printing
+    print("=== Basic Variables ===");
+    print("Integers:", a, b, c);
+    print("Floats:", x, y);
+    print("Character:", ch);
+    print("Boolean:", flag);
+
+    // Arithmetic operators
+    print("\n=== Arithmetic Operators ===");
+    int sum = a + b;
+    int diff = b - a;
+    int prod = a * b;
+    int quot = b / a;
+    int mod = b % a;
+    print("Addition (b + a):", sum);
+    print("Subtraction (b - a):", diff);
+    print("Multiplication (a * b):", prod);
+    print("Division (b / a):", quot);
+    print("Modulus (b % a):", mod);
+
+    // Float arithmetic
+    print("\n=== Float Arithmetic ===");
+    float fsum = x + y;
+    float fprod = x * y;
+    float fdiv = x / y;
+    print("Float addition:", fsum);
+    print("Float multiplication:", fprod);
+    print("Float division:", fdiv);
+
+    // Comparison operators
+    print("\n=== Comparison Operators ===");
+    bool test1 = a < b;
+    bool test2 = b > a;
+    bool test3 = a == 10;
+    bool test4 = b != 10;
+    bool test5 = a <= b;
+    bool test6 = b >= a;
+    print("a < b:", test1);
+    print("b > a:", test2);
+    print("a == 10:", test3);
+    print("b != 10:", test4);
+    print("a <= b:", test5);
+    print("b >= a:", test6);
+
+    // Logical operators
+    print("\n=== Logical Operators ===");
+    bool and_test = test1 && test2;
+    bool or_test = test1 || false;
+    bool not_test = !false;
+    print("AND (test1 && test2):", and_test);
+    print("OR (test1 || false):", or_test);
+    print("NOT (!false):", not_test);
+
+    // Multiple assignments
+    print("\n=== Multiple Assignments ===");
+    int p, q, r;
+    p, q, r = 100, 200, 300;
+    print("Multiple assigned values:", p, q, r);
+
+    // Complex expressions
+    print("\n=== Complex Expressions ===");
+    int expr1 = (a + b) * c / (a + 5);
+    float expr2 = x * (y + 1.0) / (x - 1.0);
+    print("Integer expression ((a + b) * c / (a + 5)):", expr1);
+    print("Float expression (x * (y + 1.0) / (x - 1.0)):", expr2);
+
+    // Increment and compound assignments
+    print("\n=== Compound Assignments ===");
+    a += 5;
+    b -= 3;
+    c *= 2;
+    print("a += 5:", a);
+    print("b -= 3:", b);
+    print("c *= 2:", c);
+
+    // String concatenation in print
+    print("\n=== String Tests ===");
+    print("Hello" + " " + "World!");
+    print("Value of a is:", a, "and b is:", b);
+    
+
+    // Testing all together
+    print("\n=== Final Complex Test ===");
+    int final_result = (a + b * c) / (p - q + r) * 10;
+    print("Final result:", final_result);
+    print("Program completed successfully!");
+
+   
+}

@@ -5,7 +5,7 @@
 extern "C" {
 #endif
 
-void emit_line(const char* line);
+int compile_main_c(const char* source_file, const char* output_exe);
 
 #ifdef __cplusplus
 }
