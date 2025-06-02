@@ -23,37 +23,7 @@ Multidimensonal Arrays (1 - 5th)
 
 ## Syntax
 
-```#mux
-
-def main() {
-    int x = 10;
-    string msg = "Hello";
-    
-}
-```
-
-You can remove #mux in this version but later its important to add #mux on top of the file
-files format is .mux
-also you can make more functions like 
-
-```
-#mux
-
-def main() {
-    int x = 10;
-    string msg = "Hello";
-    
-}
-
-def mainFunc(){
-    int x = 20;
-}
-```
-
-but you cant change the name of main function like from 
-main to mainFunc or Main 
-
-variables are not case sensitive 
+check examples/main.mux  
 
 ## How to compile
 
